@@ -1,0 +1,100 @@
+Security plan
+
+Discovery
+
+Export VMs from vCenter with OS, power state and notes
+AWS: accounts, SCPs and allowed regions
+AWS: CloudTrail, GuardDuty, Security Hub and Config switched on?
+AWS: review the QA test account
+AWS: VPN, Direct Connect and Transit Gateway links to on-premises
+AWS: DataSync and MGN setup and access
+Entra: Connect sync and privileged roles
+AD: domains, trusts, admins and service accounts
+CA: root and issuing CAs, CRL and AIA URLs, templates, key storage
+Firewall: export rules and get traffic logs
+Update the Systems and Questions tabs
+
+Questions
+
+Adedotun: what 18 December means, TCRIP, who signs off, your role, the change freeze
+Adrian and Stephen: VOTS servers, data, integrations, how users sign in, DPIA
+Infrastructure team: open items only
+Cloud engineer and SOC: open items only
+Book QA/VOTS sign-off for 16 December
+Book the DC/PKI review for 22 December
+
+Update baseline
+
+Current state and inventory
+Data map
+Waves and migration approach
+Risk register
+
+Requirements
+
+Get the TCRIP controls and map to them
+Write the QA/VOTS requirements
+Security engineer confirms each one can be tested
+Agree with Delivery which are needed at go-live and which can come later
+
+Threat model
+
+Session with Adrian, Stephen and the cloud engineer
+Every threat covered by a requirement or logged as a risk
+
+Design review
+
+Review the design against the requirements
+Agree fixes for blockers
+
+Testing
+
+Test in the QA test environment
+Test in production
+File evidence and write up exceptions
+
+Sign-off
+
+Build the pack
+Approval from the data owner, SIRO and TCRIP
+Security go/no-go
+
+After go-live
+
+Two weeks of closer monitoring (hypercare)
+Remove migration tools and temporary access
+Close or re-date exceptions
+
+DC/PKI
+
+Confirm which options are viable
+Score them against the 9 criteria
+Write the recommendation
+Decision by 31 December
+
+Go-live must-haves
+
+SSO and MFA
+Admin access through Session Manager or a bastion only
+Nothing public
+Encrypted in transit and at rest
+No secrets in code
+Supported, patched OS
+Logs to SOC
+Restore tested
+Incident runbook
+UK-only hosting
+Threat model done
+Risks accepted
+DPIA started
+Change approved
+Sign-off given
+
+Later, with dates
+
+Guardrails
+ITHC
+Asset register
+Joiners and leavers process
+Supplier and licence checks
+DR plan
